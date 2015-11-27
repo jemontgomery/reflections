@@ -1,0 +1,36 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    It's much easier to identify differences as the computer does the heavy lifting and show's you exactly where to look.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    For example, if you've made a change and realized that you went down a dead end. you could easily undo those changes so you don't spend time doing re work.  This has happend to me a number of times in the past.  I wish I had a version control system at that point.
+
+    I learned something new.  I didn't know that youd could view the doc history for dropbox, google docs, and wikipedia.  That's a helpful note
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Pros of a manual commit is that you could do it at a natural breaking point, when you have things working properly.  Not just at random points.  The negative is if you don't commit before you mess up the code, you won't be able to undo it.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    It makes sense to batch files if the changes if one depend on others, which is more likely to be the case in development vs documents/sheets which tend to be more stand alone. 
+
+How can you use the commands git log and git diff to view the history of files?
+
+    'git log' shows the history of committs with remarks based on what was done.  
+    'git diff' followed by old and new commit ids will show what lines were changed between each files.  Additions and deletions.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    I love the idea of being able to roll back changes to return to a version that works properly.  using 'git checkout commit-id' you could do serious changes to a file without worrying that you'd be making changes you couldn't undo.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Web projects would be fun. I have some big changes that I'd feel more comfortable doing with version control established.
