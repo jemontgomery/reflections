@@ -1,6 +1,6 @@
 When would you want to use a remote repository rather than keeping all your work local?
 
-  It's a good backup if your HD were to go down.  It would also be useful if you were collaborating with someone remotely.
+  It's a good backup if your HD were to go down.  It would also be useful if you were collaborating with someone remotely. This is pretty cool.
 
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
