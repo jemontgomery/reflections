@@ -10,13 +10,42 @@ What value do you think it offers?
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+	because you can run git diff --staged to compare what you have staged to the latest commit to ensure that you're committing just one logical change per commit
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+	If you were working on a large change that had many impacts across the project, it could be a good way to keep that process separate from the main branch until it was tested enough to merge back into the master branch.
+
 How do the diagrams help you visualize the branch structure?
+
+	this let's you know which committs can be accessed from which branches so you know where visually you are in the hierarchy. with comman 'git log --graph --oneline branch1 branch2'
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+	The result is that you can get to all the upstream commits from a merge event.  It's represented that way to indicate that fact.  Commits are interspersed, so it's not clear what the parent is.
+
 What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
 manually?
+
+	if there are no obvious conflicts the automatic merge will save time.  If there's any hint of an issue however.  Manual work makes sense to resolve.
+
+commands: 
+
+git init #to start a repository in a directory
+git status
+git add [file to add to staging area]
+git commit [files in stage to current branch]
+git commit -m "commit message"
+git log
+git log --graph --oneline #graphical representation of commit history including branches
+git branch
+git checkout [branchname]
+git checkout -b [new branch name]
+git diff [old commit] [new commit]
+git diff difference between current files and staged
+git diff --staged  #difference between staged and commit
+git merge [branch1] [branch2]
+git show #changes compared to parent without actually knowing who the parent is.
+git branch -d [branch name] #just deletes label, do after merge, commits not lost because incorporated into master.
